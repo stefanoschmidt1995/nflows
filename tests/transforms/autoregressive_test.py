@@ -5,6 +5,7 @@ import unittest
 import torch
 
 from nflows.transforms import autoregressive
+from nflows.transforms import UMNN as umnn
 from tests.transforms.transform_test import TransformTest
 
 
@@ -121,7 +122,7 @@ class MaskedUMNNAutoregressiveTranformTest(TransformTest):
         inputs = torch.rand(batch_size, features)
         self.eps = 1e-4
 
-        transform = autoregressive.MaskedUMNNAutoregressiveTransform(
+        transform = umnn.MaskedUMNNAutoregressiveTransform(
             cond_size=10,
             features=features,
             hidden_features=30,

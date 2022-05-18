@@ -7,6 +7,7 @@ import torch
 from nflows.nn import nets
 from nflows.transforms import coupling
 from nflows.utils import torchutils
+from nflows.transforms import UMNN as umnn
 from tests.transforms.transform_test import TransformTest
 
 
@@ -131,7 +132,7 @@ class UMNNTransformTest(TransformTest):
         for shape in self.shapes:
             inputs = torch.randn(batch_size, *shape)
             transform, mask = create_coupling_transform(
-                coupling.UMNNCouplingTransform, shape, integrand_net_layers=[50, 50, 50],
+                umnn.UMNNCouplingTransform, shape, integrand_net_layers=[50, 50, 50],
                 cond_size=20,
                 nb_steps=20,
                 solver="CC"
@@ -146,7 +147,7 @@ class UMNNTransformTest(TransformTest):
         for shape in self.shapes:
             inputs = torch.randn(batch_size, *shape)
             transform, mask = create_coupling_transform(
-                coupling.UMNNCouplingTransform, shape, integrand_net_layers=[50, 50, 50],
+                umnn.UMNNCouplingTransform, shape, integrand_net_layers=[50, 50, 50],
                 cond_size=20,
                 nb_steps=20,
                 solver="CC"
@@ -162,7 +163,7 @@ class UMNNTransformTest(TransformTest):
         for shape in self.shapes:
             inputs = torch.randn(batch_size, *shape)
             transform, mask = create_coupling_transform(
-                coupling.UMNNCouplingTransform, shape, integrand_net_layers=[50, 50, 50],
+                umnn.UMNNCouplingTransform, shape, integrand_net_layers=[50, 50, 50],
                 cond_size=20,
                 nb_steps=20,
                 solver="CC"
