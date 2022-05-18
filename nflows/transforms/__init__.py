@@ -4,7 +4,6 @@ from nflows.transforms.autoregressive import (
     MaskedPiecewiseLinearAutoregressiveTransform,
     MaskedPiecewiseQuadraticAutoregressiveTransform,
     MaskedPiecewiseRationalQuadraticAutoregressiveTransform,
-    MaskedUMNNAutoregressiveTransform,
 )
 from nflows.transforms.base import (
     CompositeTransform,
@@ -22,7 +21,6 @@ from nflows.transforms.coupling import (
     PiecewiseLinearCouplingTransform,
     PiecewiseQuadraticCouplingTransform,
     PiecewiseRationalQuadraticCouplingTransform,
-    UMNNCouplingTransform,
 )
 from nflows.transforms.linear import NaiveLinear
 from nflows.transforms.lu import LULinear
