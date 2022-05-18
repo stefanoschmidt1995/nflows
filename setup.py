@@ -31,7 +31,11 @@ setup(
             "pytest",
             "pyyaml",
             "torchtestcase",
+            "UMNN",
         ],
+        "all": [
+            "UMNN",
+        ]
     },
     dependency_links=[],
 )
