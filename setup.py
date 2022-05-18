@@ -19,11 +19,8 @@ setup(
     packages=find_packages(exclude=["tests"]),
     license="MIT",
     install_requires=[
-        "matplotlib",
         "numpy",
-        "tensorboard",
         "torch",
-        "tqdm",
     ],
     extras_requires={
         "dev": [
