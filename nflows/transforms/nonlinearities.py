@@ -126,7 +126,7 @@ class Sigmoid(Transform):
         if learn_temperature:
             self.temperature = nn.Parameter(torch.Tensor([temperature]))
         else:
-            self.temperature = torch.Tensor([temperature])
+            self.register_buffer("temperature", torch.Tensor([temperature]))
 
     def forward(self, inputs, context=None):
         inputs = self.temperature * inputs
