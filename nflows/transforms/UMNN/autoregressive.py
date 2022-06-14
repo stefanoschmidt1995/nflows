@@ -2,9 +2,9 @@
 
 import torch.nn.functional as F
 
-from nflows.transforms import made as made_module
-from nflows.transforms.autoregressive import AutoregressiveTransform
-from nflows.transforms.UMNN.monotonicnormalizer import MonotonicNormalizer
+from ...transforms import made as made_module
+from ...transforms.autoregressive import AutoregressiveTransform
+from ...transforms.UMNN.monotonicnormalizer import MonotonicNormalizer
 
 
 class MaskedUMNNAutoregressiveTransform(AutoregressiveTransform):

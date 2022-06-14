@@ -1,2 +1,2 @@
-from nflows.nn.nets.mlp import MLP
-from nflows.nn.nets.resnet import ConvResidualNet, ResidualNet
+from ..nets.mlp import MLP
+from ..nets.resnet import ConvResidualNet, ResidualNet

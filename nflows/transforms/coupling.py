@@ -5,15 +5,15 @@ import numpy as np
 import torch
 from torch.nn.functional import softplus
 
-from nflows.transforms import splines
-from nflows.transforms.base import Transform
-from nflows.transforms.nonlinearities import (
+from . import splines
+from .base import Transform
+from .nonlinearities import (
     PiecewiseCubicCDF,
     PiecewiseLinearCDF,
     PiecewiseQuadraticCDF,
     PiecewiseRationalQuadraticCDF,
 )
-from nflows.utils import torchutils
+from ..utils import torchutils
 
 
 class CouplingTransform(Transform):

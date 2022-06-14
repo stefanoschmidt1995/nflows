@@ -1,6 +1,6 @@
-from nflows.transforms.lu import LULinear
-from nflows.transforms.permutations import RandomPermutation
-from nflows.utils import torchutils
+from .lu import LULinear
+from .permutations import RandomPermutation
+from ..utils import torchutils
 
 
 class OneByOneConvolution(LULinear):

@@ -3,8 +3,8 @@
 import torch
 from torch.nn import functional as F
 
-from nflows.distributions.base import Distribution
-from nflows.utils import torchutils
+from .base import Distribution
+from ..utils import torchutils
 
 
 class ConditionalIndependentBernoulli(Distribution):

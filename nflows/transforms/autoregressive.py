@@ -4,20 +4,20 @@ import numpy as np
 import torch
 from torch.nn import functional as F
 
-from nflows.transforms.base import Transform
-from nflows.transforms import made as made_module
-from nflows.transforms.splines.cubic import cubic_spline
-from nflows.transforms.splines.linear import linear_spline
-from nflows.transforms.splines.quadratic import (
+from .base import Transform
+from . import made as made_module
+from .splines.cubic import cubic_spline
+from .splines.linear import linear_spline
+from .splines.quadratic import (
     quadratic_spline,
     unconstrained_quadratic_spline,
 )
-from nflows.transforms.splines import rational_quadratic
-from nflows.transforms.splines.rational_quadratic import (
+from .splines import rational_quadratic
+from .splines.rational_quadratic import (
     rational_quadratic_spline,
     unconstrained_rational_quadratic_spline,
 )
-from nflows.utils import torchutils
+from ..utils import torchutils
 
 
 class AutoregressiveTransform(Transform):

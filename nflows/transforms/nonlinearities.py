@@ -5,14 +5,14 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from nflows.transforms import splines
-from nflows.transforms.base import (
+from . import splines
+from .base import (
     CompositeTransform,
     InputOutsideDomain,
     InverseTransform,
     Transform,
 )
-from nflows.utils import torchutils
+from ..utils import torchutils
 
 
 class Tanh(Transform):

@@ -6,7 +6,7 @@ import warnings
 import torch
 from torch import Tensor
 
-from nflows.transforms.base import Transform
+from .base import Transform
 
 
 class IdentityTransform(Transform):

@@ -4,7 +4,7 @@ from torch import nn
 from torch.nn import functional as F
 from torch.nn import init
 
-from nflows.transforms.linear import Linear
+from .linear import Linear
 
 
 class LULinear(Linear):

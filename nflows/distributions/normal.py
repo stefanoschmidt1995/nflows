@@ -4,8 +4,8 @@ import numpy as np
 import torch
 from torch import nn
 
-from nflows.distributions.base import Distribution
-from nflows.utils import torchutils
+from .base import Distribution
+from ..utils import torchutils
 
 
 class StandardNormal(Distribution):

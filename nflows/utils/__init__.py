@@ -1,4 +1,4 @@
-from nflows.utils.torchutils import (
+from .torchutils import (
     cbrt,
     create_alternating_binary_mask,
     create_mid_split_binary_mask,
@@ -16,7 +16,7 @@ from nflows.utils.torchutils import (
     tensor2numpy,
     tile,
 )
-from nflows.utils.typechecks import (
+from .typechecks import (
     is_bool,
     is_int,
     is_nonnegative_int,
