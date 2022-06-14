@@ -3,15 +3,15 @@
 import torch
 from torch.nn import functional as F
 
-from nflows.distributions.normal import StandardNormal
-from nflows.flows.base import Flow
-from nflows.nn import nets as nets
-from nflows.transforms.base import CompositeTransform
-from nflows.transforms.coupling import (
+from ..distributions.normal import StandardNormal
+from .base import Flow
+from ..nn import nets as nets
+from ..transforms.base import CompositeTransform
+from ..transforms.coupling import (
     AdditiveCouplingTransform,
     AffineCouplingTransform,
 )
-from nflows.transforms.normalization import BatchNorm
+from ..transforms.normalization import BatchNorm
 
 
 class SimpleRealNVP(Flow):

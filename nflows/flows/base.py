@@ -3,8 +3,8 @@
 
 import torch.nn
 
-from nflows.distributions.base import Distribution
-from nflows.utils import torchutils
+from ..distributions.base import Distribution
+from ..utils import torchutils
 
 
 class Flow(Distribution):

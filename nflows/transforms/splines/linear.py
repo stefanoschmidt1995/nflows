@@ -2,8 +2,8 @@ import numpy as np
 import torch
 from torch.nn import functional as F
 
-from nflows.transforms.base import InputOutsideDomain
-from nflows.utils import torchutils
+from ...transforms.base import InputOutsideDomain
+from ...utils import torchutils
 
 
 def unconstrained_linear_spline(

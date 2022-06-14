@@ -1,7 +1,7 @@
 import torch
 
-from nflows.transforms.base import Transform
-import nflows.utils.typechecks as check
+from .base import Transform
+from ..utils import typechecks as check
 
 
 class SqueezeTransform(Transform):

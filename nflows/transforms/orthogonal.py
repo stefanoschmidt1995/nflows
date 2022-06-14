@@ -3,8 +3,8 @@
 import torch
 from torch import nn
 
-from nflows.transforms.base import Transform
-import nflows.utils.typechecks as check
+from .base import Transform
+from ..utils import typechecks as check
 
 
 class HouseholderSequence(Transform):

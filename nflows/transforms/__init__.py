@@ -1,11 +1,11 @@
-from nflows.transforms.autoregressive import (
+from .autoregressive import (
     MaskedAffineAutoregressiveTransform,
     MaskedPiecewiseCubicAutoregressiveTransform,
     MaskedPiecewiseLinearAutoregressiveTransform,
     MaskedPiecewiseQuadraticAutoregressiveTransform,
     MaskedPiecewiseRationalQuadraticAutoregressiveTransform,
 )
-from nflows.transforms.base import (
+from .base import (
     CompositeTransform,
     InputOutsideDomain,
     InverseNotAvailable,
@@ -13,8 +13,8 @@ from nflows.transforms.base import (
     MultiscaleCompositeTransform,
     Transform,
 )
-from nflows.transforms.conv import OneByOneConvolution
-from nflows.transforms.coupling import (
+from .conv import OneByOneConvolution
+from .coupling import (
     AdditiveCouplingTransform,
     AffineCouplingTransform,
     PiecewiseCubicCouplingTransform,
@@ -22,9 +22,9 @@ from nflows.transforms.coupling import (
     PiecewiseQuadraticCouplingTransform,
     PiecewiseRationalQuadraticCouplingTransform,
 )
-from nflows.transforms.linear import NaiveLinear
-from nflows.transforms.lu import LULinear
-from nflows.transforms.nonlinearities import (
+from .linear import NaiveLinear
+from .lu import LULinear
+from .nonlinearities import (
     CompositeCDFTransform,
     GatedLinearUnit,
     LeakyReLU,
@@ -37,19 +37,19 @@ from nflows.transforms.nonlinearities import (
     Sigmoid,
     Tanh,
 )
-from nflows.transforms.normalization import ActNorm, BatchNorm
-from nflows.transforms.orthogonal import HouseholderSequence
-from nflows.transforms.permutations import (
+from .normalization import ActNorm, BatchNorm
+from .orthogonal import HouseholderSequence
+from .permutations import (
     Permutation,
     RandomPermutation,
     ReversePermutation,
 )
-from nflows.transforms.qr import QRLinear
-from nflows.transforms.reshape import SqueezeTransform
-from nflows.transforms.standard import (
+from .qr import QRLinear
+from .reshape import SqueezeTransform
+from .standard import (
     AffineScalarTransform,
     AffineTransform,
     IdentityTransform,
     PointwiseAffineTransform,
 )
-from nflows.transforms.svd import SVDLinear
+from .svd import SVDLinear

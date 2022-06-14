@@ -3,7 +3,7 @@ from torch import nn
 from torch.nn import functional as F
 from torch.nn import init
 
-import nflows.utils as utils
+from ... import utils as utils
 
 
 class ResidualBlock(nn.Module):

@@ -6,9 +6,8 @@ from torch import nn
 from torch.nn import functional as F
 from torch.nn import init
 
-from nflows.transforms.base import Transform
-from nflows.utils import torchutils
-import nflows.utils.typechecks as check
+from .base import Transform
+from ..utils import torchutils, typechecks as check
 
 
 class LinearCache:

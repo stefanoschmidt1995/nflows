@@ -1,1 +1,1 @@
-from nflows.nn.nde.made import MixtureOfGaussiansMADE
+from .made import MixtureOfGaussiansMADE

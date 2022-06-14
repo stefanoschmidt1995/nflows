@@ -3,8 +3,8 @@
 import torch
 from torch import nn
 
-from nflows.utils import torchutils
-import nflows.utils.typechecks as check
+from ..utils import torchutils
+from ..utils import typechecks as check
 
 
 class NoMeanException(Exception):

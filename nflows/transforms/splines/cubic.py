@@ -3,8 +3,8 @@ import math
 import torch
 from torch.nn import functional as F
 
-from nflows.transforms.base import InputOutsideDomain
-from nflows.utils import torchutils
+from ...transforms.base import InputOutsideDomain
+from ...utils import torchutils
 
 DEFAULT_MIN_BIN_WIDTH = 1e-3
 DEFAULT_MIN_BIN_HEIGHT = 1e-3

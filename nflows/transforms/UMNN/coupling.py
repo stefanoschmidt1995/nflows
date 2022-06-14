@@ -1,7 +1,7 @@
 """Coupling UMNN transform"""
 
-from nflows.transforms.coupling import CouplingTransform
-from nflows.transforms.UMNN.monotonicnormalizer import MonotonicNormalizer
+from ...transforms.coupling import CouplingTransform
+from ...transforms.UMNN.monotonicnormalizer import MonotonicNormalizer
 
 class UMNNCouplingTransform(CouplingTransform):
     """An unconstrained monotonic neural networks coupling layer that transforms the variables.
