@@ -29,6 +29,7 @@ setup(
             "flake8",
             "isort",
             "pytest",
+            "pytest-rerunfailures",
             "pyyaml",
             "torchtestcase",
             "UMNN",
