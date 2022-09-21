@@ -22,13 +22,14 @@ setup(
         "numpy",
         "torch",
     ],
-    extras_requires={
+    extras_require={
         "dev": [
             "autoflake",
             "black",
             "flake8",
             "isort",
             "pytest",
+            "pytest-rerunfailures",
             "pyyaml",
             "torchtestcase",
             "UMNN",
