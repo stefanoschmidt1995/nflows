@@ -22,7 +22,7 @@ setup(
         "numpy",
         "torch",
     ],
-    extras_requires={
+    extras_require={
         "dev": [
             "autoflake",
             "black",
