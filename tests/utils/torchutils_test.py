@@ -86,7 +86,7 @@ class TorchUtilsTest(torchtestcase.TorchTestCase):
 
         for inputs in [left_boundaries, right_boundaries, mid_points]:
             with self.subTest(inputs=inputs):
-                idx = torchutils.searchsorted(bin_locations[None, :], inputs)
+                idx = torchutils.searchsorted(bin_locations, inputs)
                 self.assertEqual(idx, torch.arange(0, 9))
 
     def test_searchsorted_arbitrary_shape(self):
