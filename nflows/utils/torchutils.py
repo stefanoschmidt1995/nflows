@@ -133,8 +133,13 @@ def create_random_binary_mask(features):
 
 
 def searchsorted(bin_locations, inputs, eps=1e-6):
+    bin_locations = bin_locations.detach().clone()
     bin_locations[..., -1] += eps
-    return torch.sum(inputs[..., None] >= bin_locations, dim=-1) - 1
+    idx = (torch.searchsorted(
+        bin_locations, inputs[..., None],
+        side="right",
+    ) - 1).squeeze(-1)
+    return idx
 
 
 def cbrt(x):
